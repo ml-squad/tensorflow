@@ -28,3 +28,7 @@ from tensorflow.python.ops.gen_user_ops import *  # pylint: disable=wildcard-imp
 def my_fact():
   """Example of overriding the generated code for an Op."""
   return _gen_user_ops._fact()  # pylint: disable=protected-access
+
+def my_zero_out():
+  """Example of overriding the generated code for an Op."""
+  return _gen_user_ops._zero_out()  # pylint: disable=protected-access
